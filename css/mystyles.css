@@ -1,0 +1,175 @@
+/*
+  White: #FFF8E7
+  Black: #403E3A
+  Blue: #7E8DB2
+  Green: #5AB260
+  Red: #D53D37
+  Yellow: #CFB440
+*/
+
+html {
+  font-family: 'Oswald', sans-serif;
+  background-image: url(http://s3.amazonaws.com/media.wbur.org/wordpress/10/files/2011/07/0714_bengals.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+button {
+  margin: 0 auto !important;
+}
+.header,
+.quiz,
+.footer {
+  width: 80%;
+  margin: auto;
+}
+
+.header,
+.footer {
+  text-align: center;
+  padding-top: 5rem;
+  color: #00a9e0;
+}
+
+.header--title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3rem;
+  text-shadow: 1px 1px #333333;
+}
+
+.footer--copy {
+  font-size: .8rem;
+}
+
+.quiz--qa,
+.quiz--score,
+.quiz--instructions {
+  color: #403E3A;
+  background-color: rgba(255, 255, 255, .95);
+  padding: 2rem;
+  width: 50%;
+  margin: auto !important;
+  height: 30rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.quiz--question {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.quiz--answers {
+  padding: 2rem 0;
+  text-align: left;
+}
+
+.quiz--answer-choice {
+  padding: 0;
+  width: 50%;
+  margin-left: 35%;
+}
+
+
+/*CSS radio buttons from http://codepen.io/mitchmc/pen/pebIx*/
+.quiz--answer-choice input[type="radio"] {
+  display: inline-block;
+}
+
+.quiz--answer-choice input[type="radio"] + label span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  cursor:pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.quiz--answer-choice input[type="radio"] + label span {
+  background-color: #403E3A;
+}
+
+.quiz--answer-choice input[type="radio"]:checked + label span{
+  background-color: #5AB260;
+}
+
+.quiz--confirm-btn,
+.quiz--next-btn,
+.quiz--start-btn {
+  font-family: 'Oswald', sans-serif;
+  color: #FFF8E7;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 auto;
+}
+
+.quiz--confirm-btn,
+.quiz--next-btn {
+  margin: 0 auto;
+}
+
+.quiz--confirm-btn {
+  background-color: #7E8DB2;
+  margin: 0 auto;
+}
+
+.quiz--next-btn {
+  background-color: #5AB260;
+  display: none;
+}
+
+.quiz--start-btn {
+  background-color: #5AB260;
+  font-size: 1.25rem;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+
+.quiz--score,
+.quiz--qa {
+  display: none;
+}
+
+.quiz--score-text,
+.quiz--instructions {
+  text-align: center;
+}
+
+.quiz--score-text,
+.quiz--instructions-text {
+  margin: 4rem;
+}
+
+/*Answer States*/
+.correct {
+  background-color: #5AB260;
+}
+
+.incorrect {
+  background-color: #D53D37;
+}
+
+.green-text {
+  color: #5AB260;
+}
+
+.yellow-text {
+  color: #CFB440;
+}
+
+.red-text {
+  color: #D53D37;
+}
+
+#quiz--correct {
+  margin: 0 auto;
+  width: 100px;
+  padding: 2px;
+  text-align: center;
+}
